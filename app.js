@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('#new-item-form');
     form.addEventListener('submit', handleFromSubmit)
 
-    const del = document.querySelector('#reading-list')
-    del.addEventListener('submit', handleDeleteAll)
+    const del = document.querySelector('#del')
+    del.addEventListener('click', handleDel)
 })
 
 
@@ -41,10 +41,11 @@ const handleFromSubmit = function (event) {
 }
 
 
-const handleDeleteAll = function (event){
+const handleDel = function (thing){
     // event.preventDefault()
-    console.log(event.target)
+    console.log(thing.target)
     var locate = document.querySelector('#reading-list');
+    var newListItem = document.querySelector('#reading-list li')
     locate.removeChild(newListItem);
 
 }
