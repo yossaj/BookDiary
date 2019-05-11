@@ -8,6 +8,15 @@ body{
     font-family: futura;
 }
 
+header{
+  background-color: #DEF4C6
+}
+
+header h1{
+  font-family:'Grand Hotel', cursive;
+  font-size: 4em;
+}
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;

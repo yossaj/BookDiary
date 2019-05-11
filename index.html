@@ -6,10 +6,13 @@
     <title>Book Diary</title>
     <script src="app.js"> </script>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="shortcut icom" href="http://icons.iconarchive.com/icons/custom-icon-design/mono-general-2/24/document-icon.png" type="image/x-icon" href="">
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <h1>Book Diary</h1>
+    </header>
     <form id="new-item-form">
         <div id="form-wrapper">
             <div class="form-item">
@@ -26,9 +29,12 @@
                 <label for="category" class="primary">Category</label>
                 <select id="category">
                     <option value="" disabled selected></option>
-                    <option value="Book">Book</option>
-                    <option value="Article">Article</option>
-                    <option value="Blog Post">Blog Post</option>
+                    <option value="General Fiction">General Fiction</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Classic">Classic</option>
+                    <option value="Law">Law</option>
+                    <option value="History">History</option>
+                    <option value="Biography">Biography</option>
                 </select>
             </div>
 
@@ -46,7 +52,7 @@
     
 
     <div id ='reading'>
-        <h1>Book Diary</h1>
+        <h1>Entries</h1>
         <ul id="reading-list">
         
         </ul>
