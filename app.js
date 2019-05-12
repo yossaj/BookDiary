@@ -43,11 +43,11 @@ const handleFromSubmit = function (event) {
 
 const handleDel = function (thing){
     // event.preventDefault()
-    console.log(thing.target)
     var locate = document.querySelector('#reading-list');
-    var newListItem = document.querySelector('#reading-list li')
-    locate.removeChild(newListItem);
-
+    var newListItem = locate.children
+    while (newListItem[0]){
+        locate.removeChild(newListItem[0]);
+    }
 }
 
 
